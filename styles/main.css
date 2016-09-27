@@ -1,0 +1,161 @@
+.main-container {
+    width: 768px;
+    height: 100%;
+    margin-top: 10px;
+    /*background-color: #ddd;*/
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    padding: 20px 20px 0 20px;
+    background-color: #aaa;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#header .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    /*opacity: 0.6;*/
+    z-index: -1;
+    /*-webkit-filter: blur(5px);*/
+    box-shadow: inset 0 0 20px 1000px rgba(0, 0, 0, 1);
+}
+
+.search-big{
+    font-size: 0;
+}
+
+.search-big img {
+    width: 60px;
+    height: 60px;
+}
+
+.search-big input[type='text'] {
+    height: 60px;
+    width: calc(100% - 60px);
+    font-size: 40px;
+    vertical-align: top;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.filters {
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filters .roles li {
+    margin-right: 10px;
+    background-color: #eee;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    box-shadow: inset 0 -10px 20px -10px #000;
+}
+
+.filters .roles li.selected {
+    background-color: white;
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.filters .roles li .title {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.filters .roles li .content {
+    padding: 10px;
+}
+
+.filters .filters-list {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 10px 0 10px;
+    border-radius: 5px;
+    bottom: 10px;
+    right: 0;
+}
+
+.filters .filters-list li {
+    margin-bottom: 10px;
+}
+
+.filters .filters-list li div {
+    display: inline-block;
+    width: 70px;
+}
+
+.filters .filters-list li select {
+    color: black;
+}
+
+table {
+    width: 100%;
+}
+
+div.col {
+    display: inline-block;
+    /*background-color: grey;*/
+    /*margin: 0;;*/
+    float: left;
+    padding: 10px;
+}
+
+div.winrate {
+    padding: 20px;
+}
+
+div.winrate .title {
+    font-size: 30px;
+}
+
+div.winrate .value {
+    padding-left: 5px;
+    font-size: 50px;
+    display: inline-block;
+}
+
+div.winrate .placement .placement-n {
+    font-size: 18px;
+}
+
+div.winrate .placement .fa {
+    /*font-size: 20px;*/
+}
+
+#stats-table {
+    /*margin: 10px;*/
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+#stats-table th {
+    font-weight: normal;
+}
+
+#stats-table thead th {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#stats-table th {
+    padding: 5px 10px 5px 10px;
+}

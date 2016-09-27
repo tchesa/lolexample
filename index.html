@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="characterCtrl">
+    <head>
+        <meta charset="utf-8">
+        <title>{{targetChampion.name}}</title>
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="/styles/main.css">
+
+        <script src="https://use.fontawesome.com/97d9628972.js"></script>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-route/angular-route.js"></script>
+        <script src="scripts/app.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div id="header">
+                <div class="search-big">
+                    <img src="http://vignette2.wikia.nocookie.net/leagueoflegends/images/6/6f/AnnieSquare.png/revision/latest?cb=20150404100758">
+                    <input type="text" placeholder="champion">
+                </div>
+                <!-- <div class="search-big">
+                    <img src="http://vignette2.wikia.nocookie.net/leagueoflegends/images/6/6f/AnnieSquare.png/revision/latest?cb=20150404100758">
+                    <input type="text" placeholder="enemy">
+                </div> -->
+                <!-- <img class="background" src="http://vignette3.wikia.nocookie.net/leagueoflegends/images/8/8a/Annie_OriginalSkin.jpg/revision/latest?cb=20131125001003&path-prefix=pt-br"> -->
+                <div class="filters">
+                    <div class="roles">
+                        <ul>
+                            <li class="selected">
+                                <a href="#">
+                                    <div class="title">
+                                        Middle
+                                    </div>
+                                    <div class="content">
+                                        63% role rate<br>
+                                        23303 samples<br>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="title">
+                                        Support
+                                    </div>
+                                    <div class="content">
+                                        22% role rate<br>
+                                        11945 samples<br>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="filters-list">
+                        <ul>
+                            <li>
+                                <div>League</div>
+                                <select>
+                                    <option value="">All Ranked</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div>Region</div>
+                                <select>
+                                    <option value="">All</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="col" style="width: 50%">
+                    <div class='winrate'>
+                        <div class='title'>
+                            Win rate
+                            <div class='value'>
+                                54%
+                            </div>
+                        </div>
+                        <div class='placement'>
+                            Role placement: <span class='placement-n'>4</span>/48 <span class='fa fa-caret-down'></span>2
+                        </div>
+                    </div>
+                </div>
+
+                <div class='col' style='width: 50%'>
+                    <table id='stats-table'>
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    Statistics
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Type</th>
+                                <th>Average</th>
+                                <th>Role placement</th>
+                            </tr>
+                            <tr>
+                                <th>Win rate</th>
+                                <th>50%</th>
+                                <th>30/46 +2</th>
+                            </tr>
+                            <tr>
+                                <th>Play rate</th>
+                                <th>50%</th>
+                                <th>30/46 +2</th>
+                            </tr>
+                            <tr>
+                                <th>Ban rate</th>
+                                <th>50%</th>
+                                <th>30/46 +2</th>
+                            </tr>
+                            <tr>
+                                <th>Gold Earned</th>
+                                <th>50%</th>
+                                <th>30/46 +2</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
