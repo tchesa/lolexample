@@ -1,9 +1,4 @@
-
-<style>
-  td {
-    border-color: transparent;
-  }
-</style>
+<link rel="stylesheet" href="markdown.css"></link>
 <table style="border-color: transparent">
   <thead>
     <tr>
