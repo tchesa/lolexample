@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="markdown.css"></link>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/tchesa/lolexample/master/markdown.css"/>
 <table style="border-color: transparent">
   <thead>
     <tr>
